@@ -4,7 +4,7 @@ import React from 'react'
 function Navbar() {
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar flex justify-between bg-base-100  z-10 shadow-md  bg-base-100">
                 <div className="flex-1">
                     <a className="btn btn-ghost normal-case text-xl">Around Q</a>
                 </div>

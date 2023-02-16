@@ -6,6 +6,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
+
   return (
     <html lang="en" data-theme="emerald">
       {/*
@@ -14,10 +17,15 @@ export default function RootLayout({
       */}
       <head />
 
-      <body>
-      <Navbar/>
-        
-        {children}</body>
+      <body className="flex flex-col items-center h-screen h-[100svh]">
+        <div className="w-full max-w-6xl flex-grow">
+          <Navbar />
+          <div className="p-4 pb-10">
+            {children}
+
+          </div>
+        </div>
+      </body>
     </html>
   )
 }
